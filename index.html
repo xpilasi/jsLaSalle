@@ -1,15 +1,25 @@
+<script>
+    console.log('script al inicio');
+</script>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xpilasi JS</title>
+    <link href="style.css" rel="stylesheet">
+    <script>console.log('script en el head');</script>
+        
+     
+    
 </head>
 <body>
+    <script>console.log('script en el body');</script>
     <header>
         <h1>JS - xPilasi</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>About</li>
                 <li>Exercises</li>
                 <li>Cool links</li>
@@ -18,16 +28,29 @@
         </nav>
     </header>
 
-    <section>
+    <section class="datos_generales">
         <article>
-            <h4>First</h4>
+            <h3>Datos Generales</h3>
+            <h4>1. Imprimir por consola</h4>
+            <p>&#10145 console.log(<span>'Hola mundo x consola'</span>)</p>
+            <p>&#10145 shortcut MAC: <span>'CMD + option+ K'</span></p>
+            <p>
+                <img src="" alt="">
+            </p>
 
-            <p>This is the first</p>
+            <h4>2. Tipos de lenguajes</h4>
+            <p>&#10145 compilados: pasa por un programa que lo empaqueta y lo interpreta</p>
+            <p>&#10145 interpretados: pasa por un programa que lo interpreta línea a línea</p>
             
+            <h4>3. Datos de JS</h4>
+            <p>&#10145 DOM: Document Object Mapping</p>
+            <p>&#10145 Cada navegador interpreta JS de manera diferente.</p>
         </article>
     </section>
 
 
     
 </body>
+
 </html>
+<script>console.log('script al final');</script>

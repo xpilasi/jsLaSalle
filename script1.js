@@ -1,0 +1,1 @@
+console.log('Script FUERA del archivo HTML');

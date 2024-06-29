@@ -5,6 +5,9 @@ body{
     margin-inline: 20px;
     color: rgb(39, 39, 39);
 }
+html {
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
     color: rgb(4, 160, 160);
@@ -35,6 +38,9 @@ h1{
     background-image:url('img/min.jpg') ;
     color: white;
     margin-bottom: 0;
+}
+h2{
+    
 }
 
 ul{

@@ -57,8 +57,10 @@ li{
     cursor: pointer;
 }
 li a:hover{
-    color: rgb(114, 114, 114);
-    transition: 0.5s ease ;
+    
+    text-decoration: underline;
+    color: rgb(233, 203, 239);
+    transition:  0.5s ease ;
 }
 
 p{

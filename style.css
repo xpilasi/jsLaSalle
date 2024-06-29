@@ -63,6 +63,12 @@ span{
     font-weight: 600;
 }
 
+hr{
+    color: rgb(255, 255, 255);
+    
+
+}
+
 .volver{
 
 }
@@ -79,4 +85,21 @@ span{
 
 .variables_h3{
     text-align: center;
+}
+
+.boton_inicio{
+    display: flex;
+    position: fixed;
+    right: 20px;
+    top: 50%; /* Posiciona el botón a la mitad de la altura de la pantalla */
+    transform: translateY(-50%);
+    background-color: rgb(214, 196, 224);
+    padding-block: 10px;
+    padding-inline: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+.boton_inicio:hover{
+    background-color: rgb(127, 114, 215);
 }

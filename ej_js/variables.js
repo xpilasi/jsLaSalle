@@ -25,4 +25,7 @@ alReves.reverse();
 a = alReves[1];
 b = alReves[0];
 
-console.log(a,b)
+console.log(a,b);
+
+// -----------
+

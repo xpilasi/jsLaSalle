@@ -39,8 +39,8 @@ h1{
     color: white;
     margin-bottom: 0;
 }
-h2{
-    
+h4{
+    color: rgb(36, 13, 58);
 }
 
 ul{
@@ -146,4 +146,12 @@ hr{
 .botones_index a:hover{
     color: rgb(221, 122, 230);
 
+}
+
+.emoji{
+    display: flex;
+    align-items: center;
+    padding-inline: 4px;
+    color: rgb(255, 255, 255);
+    font-size: larger;
 }

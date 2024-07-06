@@ -13,10 +13,7 @@ console.log(typeof radioString);
 console.log(typeof radioInt);
 
 
-// Métodos: --> Funciones asociadas a un objeto
 
-//Slice
-//To Upper/lower case
 
 
 // trim --> para eliminar los espacios al principio y al final
@@ -58,3 +55,12 @@ guitarras = 'Mi marca preferida de guitarras es Gibson y Gibson'
 guitarrasReplaceAll = guitarras.replaceAll('Gibson','Tokai');
 console.log(guitarras);
 console.log(guitarrasReplaceAll)
+
+// Index off
+colores = ['rojo', 'carmín', 'verde' ,'turquesa'];
+console.log(colores.indexOf('carmín')); //índice 1
+console.log(colores.indexOf('turquesa')); //índice 3
+
+//Includes
+existe = colores.includes('negro');
+console.log(existe);//false: no existe el color negro en el array

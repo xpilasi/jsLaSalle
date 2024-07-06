@@ -28,33 +28,34 @@ console.log(largoObjeto);
 // TODO: array con 5 objetos dentro con las mismas 4 propiedades
 
 gibson = {
+    marca: 'Gibson',
     origen: 'USA',
     modeloIconico:'Les Paul',
-    fundador: 'Orville Gibson',
     anyoFundacion: 1894,  
+    
 }
 fender = {
+    marca: 'Fender',
     origen: 'USA',
     modeloIconico:'Stratocaster',
-    fundador: 'Leo Fender',
     anyoFundacion: 1946,  
 }
 ibanez = {
+    marca: 'Ibanez',
     origen: 'Japón',
     modeloIconico:'JEM',
-    fundador: 'Hoshino Gakki',
     anyoFundacion: 1895,  
 }
 strandberg = {
+    marca: 'Strandberg',
     origen: 'Suecia',
     modeloIconico:'Boden',
-    fundador: 'Ola Stransberg',
     anyoFundacion: 2007,  
 }
 schecter = {
+    marca: 'Schecter',
     origen: 'USA',
     modeloIconico:'C6',
-    fundador: 'David Schecter',
     anyoFundacion: 1976,  
 }
 
@@ -86,9 +87,15 @@ console.log(anyosFundacion);
 
 //promedio de antiguedad de las marcas de guitarra:
 anyoActual = 2024;
-totalAnyos = (anyoActual - anyosFundacion[0]) + (anyoActual - anyosFundacion[1]) +(anyoActual - anyosFundacion[2]) + (anyoActual - anyosFundacion[3])+ (anyoActual - anyosFundacion[4]);
-console.log(totalAnyos);
-    promedio = totalAnyos / anyosFundacion.length;
+totalAnyos =    (anyoActual - anyosFundacion[0]) + 
+                (anyoActual - anyosFundacion[1]) +
+                (anyoActual - anyosFundacion[2]) + 
+                (anyoActual - anyosFundacion[3]) + 
+                (anyoActual - anyosFundacion[4]);
+
+                console.log(totalAnyos);
+    
+                promedio = totalAnyos / anyosFundacion.length;
 
     console.log(promedio);
 
@@ -96,6 +103,7 @@ console.log(totalAnyos);
 // TODO: mostrar por consola 1 frase que resuma las propiedades de cada objeto
 
 console.log(`El promedio de años de antiguedad de las marcas es de ${promedio} años`);
+
 // TODO: buscar una manera de mostrar por consola todos los objetos en forma de tabla 
 console.table(marcasGuitarra)
 

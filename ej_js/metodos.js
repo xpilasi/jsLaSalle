@@ -36,21 +36,18 @@ console.log(descripcionSplit);
 
 //Slice --> Corta desde un punto inicial hasta un punto final
 //No considera el último elemento
-
 frutas = ['uva','sandía','melón','banana'];
 frutasSlice = frutas.slice(1,4);
 console.log(frutasSlice);
 
 
 //Replace: reemplaza solamebte el primero
-
 guitarras = 'Mi marca preferida de guitarras es Gibson y Gibson'
 guitarrasReplace = guitarras.replace('Gibson','Tokai');
 console.log(guitarras);
 console.log(guitarrasReplace);
 
 //Replace all: reemplaza todos
-
 guitarras = 'Mi marca preferida de guitarras es Gibson y Gibson'
 guitarrasReplaceAll = guitarras.replaceAll('Gibson','Tokai');
 console.log(guitarras);
@@ -64,3 +61,30 @@ console.log(colores.indexOf('turquesa')); //índice 3
 //Includes
 existe = colores.includes('negro');
 console.log(existe);//false: no existe el color negro en el array
+
+console.log(' -- ');
+console.log('Ejercicio ');
+
+//EJERCICIO
+//TODO Hacer que se censure el nombre en una String
+
+alumno = {
+    nombre: 'Xavier',
+    apellido: 'Pilasi',
+    asignatura: 'FrontEnd',
+    nota: 7.5,
+    aprobado: true
+}
+fraseSinCensura = `Alumno: Xavier / Nota: ${alumno.nota}`;
+
+longitudNombre = alumno.nombre.length;
+nombreCortado = alumno.nombre.substring(0,1); //Tomo la primera letra
+
+//agrega los *:
+nombreCensurado = nombreCortado.padEnd(longitudNombre,'*');
+fraseCensurada = fraseSinCensura.replace(`${alumno.nombre}`,nombreCensurado);
+console.log(`No-Censurado--> ${fraseSinCensura}`);
+console.log(`Censurado   --> ${fraseCensurada}`);
+
+
+

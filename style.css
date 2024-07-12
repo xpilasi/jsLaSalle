@@ -165,3 +165,14 @@ hr{
     color: rgb(255, 255, 255);
     font-size: larger;
 }
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.img-ejemplos{
+    width: auto;
+    
+    
+}

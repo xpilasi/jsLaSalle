@@ -26,3 +26,20 @@ console.log(largoAnimales);
 arrays = [1,2,3,[6,6,6],[[8,8],9]];
 console.log(arrays.flat(1));
 console.log(arrays.flat(Infinity));
+
+numbers = ['uno','dos','tres','cuatro','cinco'];
+
+//toReversed --> invierte pero no mopdifica el array
+numbersReversed = numbers.toReversed();
+console.log(numbers);
+console.log(numbersReversed);
+console.log(numbers);
+
+//reverse--> invierte y modifica el array
+numbersInverted = numbers.reverse();
+console.log(numbersInverted);
+
+//sort --> ordena de - a + y modifica el array
+numbersSorted = numbers.sort();
+console.log(numbers);
+console.log(numbersSorted);

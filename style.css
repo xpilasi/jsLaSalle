@@ -17,6 +17,13 @@ a:hover{
     color: rgb(221, 122, 230);
     transition: 0.5s ease ;
 }
+kbd{
+    border: 2px solid black;
+    border-color: black;
+    padding: 2px 4px;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+}
 
 li a{
     color: white;

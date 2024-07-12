@@ -41,3 +41,14 @@ console.log(getDniOfuscado('Y8295282R'));
 dni = 'Y8295282R';
 dni = getDniOfuscado(dni);
 console.log(dni);
+
+//una función a la que le pases un array de 2 elementos 
+//y te devuelva el array invertido
+
+function invertirArray(unArray){
+   let arrayInvertido = unArray.toReversed();
+   return arrayInvertido;
+}
+arrayNoInvertido = [66,99];
+console.log(`Array No-invertido --> ${arrayNoInvertido}`);
+console.log(`Array invertido    --> ${invertirArray(arrayNoInvertido)}`);

@@ -176,3 +176,13 @@ hr{
     
     
 }
+.search-field{
+    font-size: medium;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    border: solid 1px rgb(234, 234, 234);
+    padding-left: 10px;
+}

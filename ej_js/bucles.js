@@ -1,4 +1,4 @@
-console.log('%c------ Bucles ------','color: yellow');
+console.log('%c------ Condicionales (no bucles:)) ------','color: yellow');
 
 
 const invitados = 7;
@@ -20,6 +20,7 @@ if (reserva){
 //* &&--> and
 //* ||--> or
 //* === -->totalmente igual (incluyendo el tipo)
+
 const bebidas = ['whisky', 'pepsi','cerveza','jugo','agua'];
 
 if (bebidas.includes('cerveza')){

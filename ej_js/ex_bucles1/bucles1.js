@@ -59,8 +59,8 @@ console.log(letras);
 
 //! Este es un comentario IMPORTANTE :)
 
-// TODO: escribe un bucle que muestre 10 veces un mensaje por la consola con el text en color rojo y azul alternativamente
-//*OK
+//*escribe un bucle que muestre 10 veces un mensaje por la consola con el text en color rojo y azul alternativamente
+
 
 for (let i = 0 ; i <= 10; i++){
     let mensaje = 'Habrán señales';
@@ -68,53 +68,61 @@ for (let i = 0 ; i <= 10; i++){
     else{console.log(`%c${mensaje}`, 'color: yellow'); }
 };
 
-// TODO: escribe un bucle que muestre los números del 0 al 20 y muestre a su lado "hola" si es multiple de 2, "adeu" si es multiple de 3 i "què tal?" si es múltiple de 5
-//*OK
-for (let i = 0; i <= 20; i++){
-    if( i%2 == 0){console.log(`${i} - Hola`);}
-    else if (i%3 == 0){console.log(`${i} - Adeu`);}
-    else if (i%5 == 0){console.log(`${i} - ¿Qué tal?`);}
-    else {console.log(`${i} - Hola, Adeu, ¿Qué tal?`);}
-};
+//*escribe un bucle que muestre los números del 0 al 20 y muestre a su lado "hola" si es multiple de 2, "adeu" si es multiple de 3 i "què tal?" si es múltiple de 5
 
-// TODO: fes un contador que mostri a la consola els números de l'1 al número que introdueixis com a paràmentre (fins a 1000 com a màxim)
+// for (let i = 0; i <= 20; i++){
+//     if( i%2 == 0){console.log(`${i} - Hola`);}
+//     else if (i%3 == 0){console.log(`${i} - Adeu`);}
+//     else if (i%5 == 0){console.log(`${i} - ¿Qué tal?`);}
+//     else {console.log(`${i} - Hola, Adeu, ¿Qué tal?`);}
+// };
+
+//*fes un contador que mostri a la consola els números de l'1 al número que introdueixis com a paràmentre (fins a 1000 com a màxim)
 
 // numeroElegido = parseInt(prompt('Elige un número del 1 al 1000'));
 // for (let i = 0 ; i <= numeroElegido; i++){console.log(i);}
 
-// TODO: fes un contador que només mostri els números que tinguin un dígit contingut a la string definida per l'usuari (amb prompt) fins a 100
+//*fes un contador que només mostri els números que tinguin un dígit contingut a la string definida per l'usuari (amb prompt) fins a 100
 
-// numeroElegidoString = prompt('Elige un número del 1 al 100');
+numeroElegidoString = prompt('Elige un número del 1 al 100. Si pones + de 2 decimales se considerarán solamente los 2 primeros :)');
+numeroDecimal = parseFloat(numeroElegidoString);
 
+//Primer filtro : si es decimal--> es mayor a 100?
+if(numeroDecimal <= 100){
 
-
-    // for (let a = 1 ; a <= 100; a++){
-        
-    //     let indiceString = a.toString();
-    //     for(let elemento of indiceString){
-   
-    //         if(numeroElegidoString == elemento){ console.log(`MATCH! - ${a} - `);}
-    //     }
+        for (let a = 1 ; a <= 100; a++){ //recorre del 1 al 100
+            
+            let indiceString = a.toString(); //transforma el indice a string para recorrerlo
+            for(let elemento of indiceString){ //recorre el indice
        
-    // }
-
-
-
-// TODO: llista de la compra. Fes que un prompt es repeteixi fins que l'usuari introdueixi una paraula clau (useu BREAK); fins llavors, cada paraula introduida serà un item de la llista de la compra, que s'escriurà després de que l'usuari l'aturi amb el format:       
-
-
-listaDeCompras = "Lista de compras";
-seguir = true;
-
-while(seguir){
+                for(let numero of numeroElegidoString){ //recorre el numero elegido
     
-    let nuevoProducto = prompt('Agrega tu producto a la lista. Para finalizar teclea "STOP".').toLowerCase();
-    listaDeCompras += `\n   -${nuevoProducto}`;
+                    //compara el numero elegido descompuesto con el numero dentro del indice
+                    if(elemento == numero){ console.log(`MATCH!⚡️ el número "${numero}" se encuentra dentro de ${a}`);}
+                }
+            }
+        }
     
-    if(nuevoProducto == 'stop'){
-        console.log('STOP');
-        break}
+}else{console.log('No elegiste un número del 1 al 100');}
+
+
     
-}
-console.log(listaDeCompras);
+
+//*llista de la compra. Fes que un prompt es repeteixi fins que l'usuari introdueixi una paraula clau (useu BREAK); fins llavors, cada paraula introduida serà un item de la llista de la compra, que s'escriurà després de que l'usuari l'aturi amb el format:       
+
+
+// listaDeCompras = "Lista de compras";
+// seguir = true;
+
+// while(seguir){
+    
+//     let nuevoProducto = prompt('Agrega tu producto a la lista. Para finalizar teclea "STOP".').toLowerCase();
+//     listaDeCompras += `\n   -${nuevoProducto}`;
+    
+//     if(nuevoProducto == 'stop'){
+//         console.log('STOP');
+//         break}
+    
+// }
+// console.log(listaDeCompras);
     

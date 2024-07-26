@@ -1,6 +1,6 @@
 
 
-console.log('%c<---BUCLES 2--->','color: red');
+console.log('%c<---EXTRAS 2--->','color: red');
 
 
     

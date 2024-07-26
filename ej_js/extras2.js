@@ -128,31 +128,83 @@ const baseTexto = 'Esto es un texto base para el ejercicio';
 
 palabraAleatoria = (texto) => {
 
-    let cantidadPalabrasTexto = texto.lenght();
+    let textoLimpio =  texto.trim();
+    let cantidadDeEspacios = 0;
+
+    //Encontramos la cantidad de palabras que hay
+    for (let i of textoLimpio){
+        if( i == ' '){
+            cantidadDeEspacios += 1;
+        }
+    }
+
+    
+    let cantidadDePalabras = cantidadDeEspacios  + 1 ;
+
+    
     let palabraRandom = '';
-    console.log(`Total palabras: ${cantidadPalabrasTexto}`);
+    console.log(`Total palabras: ${cantidadDePalabras}`);
 
-    let sliceMin = 0;
-    let sliceMax = 0;
-
-    let numeroAleat = entregarNumeroAleatorio(0,cantidadPalabrasTexto);
+   
+    let contador = 0;
+    let numeroAleat = entregarNumeroAleatorio(0,cantidadDePalabras);
+    let palabraFinal = '';
+    let palabraTemporal = '';
+    let palabraTemporal2 = '';
 
     for (let el of texto){
-
         
-        if( let == ' '){
+        
+        palabraTemporal += el;
+
+        if( el == ' '){
+            console.log('ESPACIO');
+            console.log(`Número aleatorio: ${numeroAleat}`);
+            contador += 1;
+
             
+
+            if (contador == numeroAleat){
+                console.log(`${contador} - ${numeroAleat}`);
+
+                //Recorremos la string hacia atrás:
+                console.log(palabraTemporal);
+                // let palabraReverse = palabraTemporal.reverse();
+                // console.log(palabraReverse);
+
+                    for(let i = palabraTemporal.length -1; i>= 0;i--){
+                        
+                        console.log(`PPRRUEEBA`);
+                    palabraTemporal2 += char;
+                    if( texto[j] == ' '){
+                        break}
+                    }
+
+                break;
+            }
         
         }
-        sliceMax +1;
+        
+        console.log(palabraTemporal2);
+        let palabraDefinitiva = '';
+        palabraFinal = palabraTemporal2.trim();
+
+        for (let el of palabraFinal){
+            palabraDefinitiva =+ el;
+        }
+
+        palabraRandom = palabraDefinitiva;
     }
     
-    palabraRandom.slice(sliceMin,sliceMax);
+    
     
     return palabraRandom;
 
    
 }
+
+
+console.log(palabraAleatoria('Este es un raro texto que nos toca'));
 
 // TODO 6: paradoxa de l'aniversari. Genera N dates d'aniversari aleatòries (1-365) en un array i comprova si hi ha alguna repetida. Fes això per N = 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 i mostra a la consola per quins hi ha hagut coincidències d'aniversari
 

@@ -2,32 +2,50 @@ console.log('%c** DOM **','color: orange');
 
 //*Acceso a propiedades del DOM */
 
-console.log(document.title);
+//console.log(document.title);
 // document.querySelector('header').innerHTML += '<h3>Prueba</h3>';
 // document.querySelector('header').innerHTML += '<h3>Prueba</h3>';
 
 const titleH2 = document.querySelectorAll('h2');
+const titleH3 = document.querySelectorAll('h3');
+const kbd = document.querySelectorAll('kbd');
+const pAlternativo = document.querySelectorAll('.p-alternativo');
+const miBoton = document.getElementById('mi-boton');
+const miParrafo = document.getElementById('p-alternativo');
+let dark = false;
+
+console.log(miParrafo);
 
 
-// titleH2.forEach(h2 =>{
 
-//     h2.style.color = '#F24E4E';
-// }
-// );
+darkMode = () => {
 
-console.log(titleH2);
-let time = 2000;
-for(let el of titleH2){
-    console.log(`TIME 0: ${time}`);
-    
-    setTimeout(()=>{
+    if(dark == false){
+        document.querySelector('body').style.backgroundColor = '#1D1C26';
+        titleH2.forEach(h2 => {h2.style.color = '#FFFFFF';});
+        titleH3.forEach(h3 => {h3.style.color = '#FFFFFF';});
+        kbd.forEach(kbd => {kbd.style.boxShadow = '2px 2px #585858';});
+        pAlternativo.forEach(pAlt => {pAlt.style.color = '#FFFFFF';});
+
+       }else{
+        document.querySelector('body').style.backgroundColor = '#FFFFFF';
+        kbd.forEach(kbd => {kbd.style.boxShadow = '2px 2px #000000';});
+        titleH2.forEach(h2 => {h2.style.color = '#000000';});
+        pAlternativo.forEach(pAlt => {pAlt.style.color = '#000000';});
+
+       }
        
-        el.style.color = '#F24E4E';
-        console.log(`TIME 2: ${time}`);
-    },time)
-    
-    time += 1000;
+       dark = !dark
+       console.log(`DARK MODE: ${dark}`);
 }
 
+action = () => { console.log('FOCUS');}
 
-//'#F24E4E';
+
+miBoton.addEventListener('click',darkMode)
+miParrafo.addEventListener('scroll',action)
+
+
+
+
+

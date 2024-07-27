@@ -18,11 +18,13 @@ a:hover{
     transition: 0.5s ease ;
 }
 kbd{
+    color: black;
     border: 2px solid black;
     border-color: black;
     padding: 2px 4px;
     border-radius: 5px;
     box-shadow: 2px 2px black;
+    background-color: white;
 }
 
 li a{
@@ -196,4 +198,33 @@ hr{
 
 .article-dom{
     /* background-color: rgb(255, 189, 142); */
+}
+.article-button{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: aqua; */
+}
+button{
+    padding:15px ;
+    font-weight: 700;
+    border:none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 30px;
+    font-size: medium;
+}
+button:hover{
+    
+    
+    padding-inline:30px ;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease;
+    background-color: rgb(116, 101, 130);
+    
+    border-radius: 30px;
+}
+
+.p-alternativo{
+    color:black;
 }
